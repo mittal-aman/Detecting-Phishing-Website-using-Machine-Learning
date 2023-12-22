@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "URL Legitimacy Checker",
+    "version": "1.0",
+    "description": "Check if a URL is legitimate or fake.",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "<all_urls>",
+        "tabs"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        "warning.html",
+        "warning.js"
+    ]
+}
